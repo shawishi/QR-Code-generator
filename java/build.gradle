@@ -1,0 +1,17 @@
+plugins {
+    id 'stampee-custom'
+}
+
+group 'nayuki-qr-codegenerator'
+version '1.0'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
